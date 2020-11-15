@@ -1,0 +1,365 @@
+* {
+
+    margin: 0;
+  
+    padding: 0;
+  
+    box-sizing: border-box;
+  
+  }
+  
+  :root {
+  
+    --primaryColor: #af9a7d;
+  
+    --mainWhite: #fff;
+  
+    --offWhite: #f7f7f7;
+  
+    --mainBlack: #222;
+  
+    --mainGrey: #ececec;
+  
+    --darkGrey: #cfcfcf;
+  
+    --mainTransition: all 0.3s linear;
+  
+    --mainSpacing: 3px;
+  
+    --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  
+    --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  
+  }
+
+body {
+
+    padding-top: 66px;
+  
+    color: var(--mainBlack);
+  
+    background: var(--mainWhite);
+  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+    line-height: 1.4;
+  
+  }
+  .btn-primary {
+
+    display: inline-block;
+  
+    text-decoration: none;
+  
+    letter-spacing: var(--mainSpacing);
+  
+    color: var(--mainBlack);
+  
+    background: var(--primaryColor);
+  
+    padding: 0.4rem 0.9rem;
+  
+    border: 3px solid var(--primaryColor);
+  
+    transition: var(--mainTransition);
+  
+    text-transform: uppercase;
+  
+    cursor: pointer;
+  
+  }
+  
+  .btn-primary:hover {
+  
+    background: transparent;
+  
+    color: var(--primaryColor);
+  
+  }
+  .defaultHero
+
+{
+
+  min-height: calc(100vh - 50px);
+
+  background: url("./images/defaultBcg.jpg.jpg") center/cover no-repeat;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+
+
+/* End of Hero */
+
+/* Banner */
+
+.banner {
+
+  display: inline-block;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  color: var(--mainWhite);
+
+  padding: 0.5rem 0.4rem;
+
+  text-align: center;
+
+  text-transform: capitalize;
+
+  letter-spacing: var(--mainSpacing);
+
+}
+
+.banner h1 {
+
+  font-size: 2.5rem;
+
+}
+
+.banner div {
+
+  width: 0.5rem;
+
+  height: 0.5px;
+
+  background: var(--primaryColor);
+
+  margin: 1.7rem auto;
+
+}
+
+.banner p {
+
+  font-size: 1.2rem;
+
+  margin-bottom: 2rem;
+
+}
+
+@media screen and (min-width: 40px) {
+
+  .banner {
+
+    padding: 2rem 3rem;
+
+  }
+
+  .banner h1 {
+
+    font-size: 3rem;
+
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+
+  .banner {
+
+    padding: 2rem 6rem;
+
+  }
+
+  .banner h1 {
+
+    font-size: 4rem;
+
+  }
+
+}
+
+/* End of Banner */
+
+/* Title */
+
+.section-title {
+
+  text-align: center;
+
+  margin-bottom: 4rem;
+
+}
+
+.section-title h4 {
+
+  font-size: 2rem;
+
+  letter-spacing: var(--mainSpacing);
+
+  text-transform: capitalize;
+
+  margin-bottom: 1rem;
+
+}
+
+.section-title div {
+
+  width: 5rem;
+
+  height: 5px;
+
+  margin: 0 auto;
+
+  background: var(--primaryColor);
+
+}
+
+/* end of Title */
+
+
+
+/* services */
+
+.services {
+
+  padding: 5rem 0;
+
+}
+
+.services {
+
+  background: var(--darkGrey);
+
+  text-align: center;
+
+}
+
+.services-center {
+
+  width: 90vw;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+
+  grid-row-gap: 2rem;
+
+  grid-column-gap: 50px;
+
+}
+
+.service span {
+
+  display: inline-block;
+
+  color: var(--primaryColor);
+
+  font-size: 2.5rem;
+
+  margin-bottom: 1.5rem;
+
+}
+
+.services h6 {
+
+  letter-spacing: var(--mainSpacing);
+
+}
+
+.services p {
+
+  width: 80%;
+
+  margin: 0 auto;
+
+}
+
+@media screen and (min-width: 992px) {
+
+  .services-center {
+
+    width: 95vw;
+
+    max-width: 1170px;
+
+  }
+
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+  .services p {
+
+    width: 100%;
+
+  }
+
+}
+.medicalchallenges{
+  background: var(--darkGrey);
+margin: auto;
+padding:0;
+letter-spacing: normal;
+text-align: center;
+line-height: normal;
+  
+}
+
+.medicalchallenges h3 {
+
+  letter-spacing: normal;
+  padding: 5%;
+  margin-right: auto;
+line-height: normal;
+}
+
+.medicalchallenges li {
+
+  letter-spacing: normal;
+  padding: 5%;
+  margin-right: auto;
+  line-height: normal;
+  
+
+}
+.medicalchallenges h1 {
+
+color: blue;
+
+}
+.footer{
+  max-width: 0cm;
+  max-height: 0cm;
+}
+
+.Contact {
+  box-sizing: border-box;
+   max-width: 420px;
+   margin: 0 auto;
+}
+ p {
+   text-align: center;
+   font-weight: 500;
+}
+ input[type=text],input[type=email], select, textarea {
+   width: 100%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-top: 6px;
+   margin-bottom: 6px;
+   resize: vertical;
+}
+input[type=submit] {
+   background-color: #4CAF50;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+input[type=submit]:hover {
+   background-color: #45a049;
+   border-radius: 1px;
+}
